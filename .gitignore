@@ -5,6 +5,7 @@ bin
 .metadata
 .classpath
 .project
+eclipse
 
 # idea
 out
@@ -16,11 +17,25 @@ out
 # gradle
 build
 .gradle
+repo
 
-# other
-eclipse
+# vscode
+.vscode
+
+# run directories
 run
 runs
 run-data
 
-repo
+# dependencies
+libs/
+
+# 参考项目
+reference/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
