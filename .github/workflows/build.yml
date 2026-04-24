@@ -21,5 +21,25 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
+      # This is needed to be able to run ./gradlew below
+      # You can run `git update-index --chmod +x gradlew` then remove this step.
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./gradlew
+
+      - name: Remove local Java home and proxy settings
+        run: |
+          sed -i '/org.gradle.java.home/d' gradle.properties
+          sed -i '/systemProp.http.proxy/d' gradle.properties
+          sed -i '/systemProp.https.proxy/d' gradle.properties
+
+      - name: Debug environment
+        run: |
+          echo "Java version:"
+          java -version
+          echo "Gradle version:"
+          ./gradlew --version
+          echo "Environment variables:"
+          env | grep -E "^(JAVA|GRADLE|CI)" || true
+
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew build --stacktrace --info

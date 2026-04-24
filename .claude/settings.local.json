@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git pull *)",
+      "Bash(git add *)",
+      "Bash(git remote *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(unzip -l cat_core.zip)",
+      "Bash(unzip -o cat_core.zip)",
+      "Bash(mv texture.png cat_core.png)",
+      "Bash(rm -f model.json cat_core.zip)",
+      "Bash(unzip -p /d/Project/Creat-akaishi-technology/libs/create-aeronautics-bundled-1.21.1-1.1.3.jar META-INF/neoforge.mods.toml)",
+      "Bash(unzip -p /d/Project/Creat-akaishi-technology/libs/sable-neoforge-1.21.1-1.1.3.jar META-INF/neoforge.mods.toml)",
+      "WebFetch(domain:projects.neoforged.net)",
+      "Read(//d/Project/Creat-akaishi-technology/**)",
+      "Bash(git clone *)",
+      "Bash(unzip -p /d/Project/Creat-akaishi-technology/libs/create-aeronautics-bundled-1.21.1-1.1.3.jar META-INF/MANIFEST.MF)",
+      "Bash(unzip -l /d/Project/Creat-akaishi-technology/libs/create-aeronautics-bundled-1.21.1-1.1.3.jar)",
+      "Bash(git ls-remote *)",
+      "Bash(./gradlew --no-daemon --no-configuration-cache eclipse)"
+    ]
+  }
+}

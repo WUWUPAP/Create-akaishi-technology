@@ -1,0 +1,14 @@
+{
+  "item.create_akaishi_technology.cat_core": "CAT core",
+  "item.create_akaishi_technology.akaishi": "akaishi",
+
+  "itemGroup.create_akaishi_technology": "Akaishi Technology",
+
+  "create_akaishi_technology.configuration.title": "Creat akaishi technology Configs",
+  "create_akaishi_technology.configuration.section.create_akaishi_technology.common.toml": "Creat akaishi technology Configs",
+  "create_akaishi_technology.configuration.section.create_akaishi_technology.common.toml.title": "Creat akaishi technology Configs",
+  "create_akaishi_technology.configuration.items": "Item List",
+  "create_akaishi_technology.configuration.logDirtBlock": "Log Dirt Block",
+  "create_akaishi_technology.configuration.magicNumberIntroduction": "Magic Number Text",
+  "create_akaishi_technology.configuration.magicNumber": "Magic Number"
+}
